@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Betterbnb Demo</title>
+  </head>
+  <body>
+    <div id="Gallery"></div>
+    <div id="Description"></div>
+    <div id="Reviews"></div>
+    <div id="Booking"></div>
+    <script src="./lib/react.development.js"></script>
+    <script src="./lib/react-dom.development.js"></script>
+    <!-- <script src="http://localhost:3001/bundle.js"></script> -->
+    <script src="http://localhost:3002/:id/bundle.js"></script>
+    <script src="http://localhost:3003/homes/:id/bundle.js"></script>
+    <script src="http://localhost:3004/public/:id/dist/bundle.js"></script>
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      /*  ************************************************************************************ 
+
+      If you passed in the url in the form of window.location which is "http://localhost:XXXX/:id".
+      This looks for the pathname and uses regex to match the id in the url.
+
+      ************************************************************************************ 
+       */
+
+      let homeId = window.location.pathname.match(/[0-9]+/g)[0];
+
+      ReactDOM.render(
+        React.createElement(Gallery, {homeId: homeId}),
+        document.getElementById('Gallery')
+      );
+      ReactDOM.render(
+        React.createElement(Description, {homeId: homeId}),
+        document.getElementById('Description')
+      );
+      // ReactDOM.render(
+      //   React.createElement(Reviews, {homeId: homeId}),
+      //   document.getElementById('Reviews')
+      // );
+      ReactDOM.render(
+        React.createElement(Booking, {homeId: homeId}),
+        document.getElementById('Booking')
+      );
+    </script>
+  </body>
+</html>

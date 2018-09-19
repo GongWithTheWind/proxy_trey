@@ -1,0 +1,21 @@
+/*
+body {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+*/
+#Gallery {
+  /*width: 50%;*/
+}
+
+#Description {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+#Reviews {
+  margin: 10%;
+  display: block;
+}
+
