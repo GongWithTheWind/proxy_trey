@@ -1,21 +1,35 @@
-/*
+#gallery {
+  grid-area: 1/ 1 / 1 / 5;
+}
+
+#description {
+  grid-area: 2/ 1 / 4 / 4;
+  width: 58.3333%;
+  margin-left: 15%;
+}
+
+#bookingWrapper {
+  grid-area: 2/3/3/4;
+  margin-left: 25%;
+  width: 41.6667%;
+}
+
+#booking {
+  position: absolute;
+}
+
+#reviews {
+  grid-area: 4/1/4/4;
+  margin-left: 16%;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: minmax(auto, auto);
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+  margin: 0;
 }
-*/
-#Gallery {
-  /*width: 50%;*/
-}
-
-#Description {
-  margin-left: 5px;
-  display: inline-block;
-}
-
-#Reviews {
-  margin: 10%;
-  display: block;
-}
-
