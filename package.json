@@ -8,10 +8,11 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "jest"
   },
   "dependencies": {
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "http-proxy-middleware": "^0.19.0",
     "morgan": "^1.9.0",

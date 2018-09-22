@@ -10,7 +10,7 @@
     },
     {
       "route": "/homes/:homeId/images",
-      "address": "http://localhost:3003"
+      "address": "http://betterbnb.us-east-2.elasticbeanstalk.com/"
     },
     {
       "route": "/homes/:homeId",

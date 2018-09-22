@@ -1,7 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000;
 const proxy = require('http-proxy-middleware');
 const { routes } = require('./config.json');
 
@@ -11,14 +11,11 @@ for (route of routes) {
     app.use(route.route,
         proxy({
             target: route.address
-            // pathRewrite: (path, req) => {
-            // 	console.log(route.address, path)
-            // }
         })
     );
 }
 
 
-app.listen(port, () => {
-  console.log(`server running at: http://localhost:${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`server running at: http://localhost:${process.env.PORT}`);
 });
