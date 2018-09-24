@@ -2,7 +2,7 @@
   "routes": [
     {
       "route": "/house/:id",
-      "address": "http://localhost:3004"
+      "address": "http://booking-server.us-west-1.elasticbeanstalk.com"
     },
     {
       "route": "/descriptions/:homeId",
@@ -14,15 +14,15 @@
     },
     {
       "route": "/homes/:homeId",
-      "address": "http://localhost:3001"
+      "address": "http://reviewsreviews.us-west-1.elasticbeanstalk.com"
     },
      {
       "route": "/reviews/queried/:query",
-      "address": "http://localhost:3001"
+      "address": "http://reviewsreviews.us-west-1.elasticbeanstalk.com"
     },
      {
       "route": "/reviews/queried/:query/:id",
-      "address": "http://localhost:3001"
+      "address": "http://reviewsreviews.us-west-1.elasticbeanstalk.com"
     }
   ]
 }
