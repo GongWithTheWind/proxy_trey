@@ -10,7 +10,7 @@
     },
     {
       "route": "/homes/:homeId/images",
-      "address": "http://betterbnb.us-east-2.elasticbeanstalk.com/"
+      "address": "http://18.219.232.197"
     },
     {
       "route": "/homes/:homeId",
